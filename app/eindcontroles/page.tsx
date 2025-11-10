@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 import { usePageTitle } from '@/context/page-title-context';
 
 export default function Page() {
-    // Haalt de 'setTitle' functie op uit context voor de pagina titel
     const { setTitle } = usePageTitle();
 
     useEffect(() => {
-        setTitle("Dashboard");
+        // Haalt de 'setTitle' functie op uit context voor de pagina titel
+        setTitle("Eindcontroles");
     }, [setTitle]);
 
     return (
