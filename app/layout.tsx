@@ -7,8 +7,8 @@ import { AppShell } from '@/components/app-shell'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-    title: 'Retrack App',
-    description: 'Mijn nieuwe retrack app',
+    title: 'ReTrack App',
+    description: 'ReTrack App',
 };
 
 export default function RootLayout({
