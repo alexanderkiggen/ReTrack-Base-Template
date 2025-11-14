@@ -42,15 +42,12 @@ export function SidebarWebsiteSection({
             <DropdownMenuTrigger asChild>
               <SidebarMenuButton
                   size="lg"
-                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+                  className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground cursor-pointer"
               >
-                {/* --- HIER IS DE AANPASSING --- */}
-                {/* 'bg-sidebar-primary' is 'bg-primary' geworden */}
-                {/* 'text-sidebar-primary-foreground' is 'text-primary-foreground' geworden */}
+
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                   <activeWebsite.logo className="size-4" />
                 </div>
-                {/* --- EINDE AANPASSING --- */}
 
                 <div className="grid flex-1 text-left text-sm leading-tight">
                   <span className="truncate font-medium">{activeWebsite.name}</span>

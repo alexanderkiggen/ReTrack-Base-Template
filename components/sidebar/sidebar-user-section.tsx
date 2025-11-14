@@ -34,7 +34,7 @@ export function SidebarUserSection({ user }: {
                     <DropdownMenuTrigger asChild>
                         <SidebarMenuButton
                             size="lg"
-                            className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+                            className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground cursor-pointer"
                         >
                             <Avatar className="h-8 w-8 rounded-lg">
                                 {/*Mochten we in de toekomst profielfoto's willen toevoegen*/}
@@ -73,17 +73,17 @@ export function SidebarUserSection({ user }: {
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator/>
                         <DropdownMenuGroup>
-                            <DropdownMenuItem>
+                            <DropdownMenuItem className={"cursor-pointer"}>
                                 <BadgeCheck/>
                                 Account
                             </DropdownMenuItem>
-                            <DropdownMenuItem>
+                            <DropdownMenuItem className={"cursor-pointer"}>
                                 <Bell/>
                                 Notificaties
                             </DropdownMenuItem>
                         </DropdownMenuGroup>
                         <DropdownMenuSeparator/>
-                        <DropdownMenuItem>
+                        <DropdownMenuItem className={"cursor-pointer"}>
                             <LogOut/>
                             Uitloggen
                         </DropdownMenuItem>
